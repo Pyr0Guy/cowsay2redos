@@ -2,11 +2,14 @@ import sys
 
 args = sys.argv
 flags = []
+coolText = ""
 for arg in args:
-	if "-" in arg:
-		flags.append(arg)
-	else:
-		coolText = arg
+        if "-" in arg:
+                flags.append(arg)
+        elif arg != args[0]:
+                coolText += arg
+                if arg != args[len(args)-1]:
+                        coolText += " "
 
 str_len = len(coolText)
 eyes = "oo"
