@@ -13,7 +13,7 @@ eyes = "oo"
 mouth = "__"
 ears = "^__^"
 tail = "\\/\\"
-tonque = ""
+tonque = " "
 
 if "-p" in flags: eyes = "@@"
 if "-a" in flags: mouth = "/\\"
@@ -23,9 +23,9 @@ if "-t" in flags: tail = "-------------->"
 if "-to" in flags: tonque = "U"
 
 print(f'''
-   {"_" * len(coolText)}
+  {"_" * len(coolText)}
 < {coolText} >
-   {"-" * len(coolText)}''')
+  {"-" * len(coolText)}''')
 print(" " * (str_len//2), f"\\  {ears}")
 print(" " * (str_len//2), f" \\ ({eyes})\\________")
 print(" " * (str_len//2), f"   ({mouth})\\        ){tail}")
